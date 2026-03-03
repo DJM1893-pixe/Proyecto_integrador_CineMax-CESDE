@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CineMax CESDE</title>
+  </head>
+  <body>
+    <header>
+      <h1>CineMax CESDE</h1> <!--Se genera el titulo segun la indicacion del proyecto integrador -->
+      <nav>
+        <ul> <!--unordered list= una lista desordenada ya que no hace referencia a orden especifico para el comprador-->
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Películas</a></li>
+          <li><a href="">Comprar</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+        </nav><!--representa una seccion dentro de la pagina que pemite generar enlaces de navegación dentro de la pagina-->
+    </header>
+
+    <main> <!--main= es la etiqueta que contiene todo eje central de la pagina, lo importante-->
+      <section>
+        <h2>Compra tus Tickets</h2>
+
+        <form action=""> <!--crea la etiqueta de formulario-->
+          <p>
+            <label for="nombre">Nombre del Cliente:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </p>
+
+          <p><!--label for= y input type=-->
+            <label for="pelicula">Título de la Película:</label>
+            <input type="text" id="pelicula" name="pelicula" required />
+          </p>
+
+          <p>
+            <label for="cantidad">Cantidad de Tickets:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" max="90"
+            />
+          </p>
+
+          <p>
+            <label for="edad">Edad del Comprador:</label>
+            <input type="number" id="edad" name="edad" min="3" required />
+          </p>
+
+          <button type="submit">Procesar Compra</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Películas Disponibles</h2>
+
+        <table border="1"> <!--crea la etuiqueta global de tabla-->
+          <thead>
+            <tr> <!--table row= titulo de fila del encabezado-->
+              <th>Título</th><!--title head= titulo del encabezado de la fila-->
+              <th>Género</th>
+              <th>Horario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Interestelar</td>
+              <td>Ciencia Ficción</td>
+              <td>4:00 PM</td>
+            </tr>
+            <tr>
+              <td>Avatar</td>
+              <td>Aventura</td>
+              <td>6:30 PM</td>
+            </tr>
+            <tr>
+              <td>El Conjuro</td>
+              <td>Terror</td>
+              <td>9:00 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Experiencia CineMax</h2>
+
+        <img src="/images/1808.sm002.007.TS.m000.c5.cinema movie realistic.jpg" alt="Sala de cine" width="400px" heigth="60%"
+        /><!--img= etiqueta para añardir imagenes src= origen de la carpeta donde esta la imagen-->
+
+        <h3>Trailer Destacado</h3>
+
+        <iframe src="https://www.youtube.com/embed/5mAbnQQiPD8?si=z64DvqspoHwC6BNr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls="autoplay"  width="560" height="315"></iframe>
+        </iframe> <!--etiquta de video, en esta ocacion comparto video de youtube-->
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 CineMax CESDE - Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
