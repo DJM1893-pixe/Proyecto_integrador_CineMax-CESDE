@@ -1,39 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CineMax CESDE</title>
 </head>
-<body>
-   <table border="1"> <!--crea la etuiqueta global de tabla-->
-          <thead>
-            <tr> <!--table row= titulo de fila del encabezado-->
-              <th>Título</th><!--title head= titulo del encabezado de la fila-->
-              <th>Género</th>
-              <th>Horario</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Interestelar</td>
-              <td>Ciencia Ficción</td>
-              <td>4:00 PM</td>
-            </tr>
-            <tr>
-              <td>Avatar</td>
-              <td>Aventura</td>
-              <td>6:30 PM</td>
-            </tr>
-            <tr>
-              <td>El Conjuro</td>
-              <td>Terror</td>
-              <td>9:00 PM</td>
-            </tr>
 
-            <section>
-              <h2>Ferrari</h2>
-              <img src="images/1808.sm002.007.TS.m000.c5.cinema movie realistic.jpg" width="200px" alt="imagen del cine">
-            </section>
+<body>
+
+  <!-- HEADER pongo el encabezado del menu principal donde los usuarios van a seleccionar sefgun lo que se requiera -->
+  <header>
+
+    <h1>CineMax CESDE</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#">Cine</a></li>
+        <li><a href="#">Salas</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Más</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- Se gemera con los input y label  -->
+    <section>
+
+      <h2>Formulario de Compra</h2>
+
+      <form>
+
+        <label for="nombre">Nombre del Cliente</label>
+        <input type="text" id="nombre" required>
+
+        <br><br>
+
+        <label for="pelicula">Nombre de la Película:</label>
+        <input type="text" id="pelicula">
+
+        <br><br>
+
+        <label for="tickets">Cantidad de boletas</label>
+        <input type="number" id="tickets" min="1" max="10"> 
+
+        <br><br>
+
+        <label for="edad">Edad del Comprador:</label>
+        <input type="number" id="edad" required min="16">
+
+        <br><br>
+
+        <button type="submit">Comprar
+        </button>
+
+      </form>
+
+    </section>
+
+    <br>
+
+    <!-- Aqui se generan las tablas para las carteleras del cine -->
+    <section>
+
+      <h2>En cartelera</h2>
+
+      <table border="1">
+
+        <!-- Encabezado -->
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Género</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+
+        <!-- Cuerpo de la tabla -->
+        <tbody>
+
+          <tr>
+            <td>Interestelar</td>
+            <td>Ciencia Ficción</td>
+            <td>4:00 PM</td>
+          </tr>
+
+          <tr>
+            <td>Avatar</td>
+            <td>Aventura</td>
+            <td>6:30 PM</td>
+          </tr>
+
+          <tr>
+            <td>El Conjuro</td>
+            <td>Terror</td>
+            <td>9:00 PM</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </section>
+
+    <br>
+
+    <!-- me parece importante crear una seccion de imagenes de las peliculas que proximamente se van a mostrar en cartelera -->
+    <section>
+
+      <h2>Funciones Próximamente</h2>
+
+      <img src="images/1808.sm002.007.TS.m000.c5.cinema movie realistic.jpg"
+        width="200px"
+        alt="Imagen del cine">
+
+      <img src="images/c92bb083a9849ca72cc8d1a1b2115e52.webp"
+        width="200px"
+        alt="El diablo viste a la moda">
+
+      <img src="images/unnamed.webp"
+        width="200px"
+        alt="Constantine">
+
+    </section>
+
+    <br>
+
+    <!-- me parece clave incluir un video que muestre una pelicula destacada-->
+    <section>
+
+      <h2> El destacado del mes</h2>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c?autoplay=1&mute=1" title="Trailer de Avengers Endgame"
+        frameborder="0"allowfullscreen>
+      </iframe>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 CineMax CESDE - Todos los derechos reservados
+    </p>
+
+  </footer>
+
 </body>
+
 </html>
