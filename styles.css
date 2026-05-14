@@ -1,0 +1,192 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111827;
+    color: white;
+}
+
+/* HEADER */
+header{
+    background-color: #0f172a;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* TITULO */
+header h1{
+    margin-bottom: 15px;
+}
+
+/* NAV */
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a{
+    color: white;
+}
+
+/* MAIN */
+main{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* FLEXBOX */
+.contenedor-principal{
+    display: flex;
+}
+
+/* FORMULARIO */
+.formulario{
+    flex: 1;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+/*se aplica pseudoclase de focus para cambiar de forma mientas el usuaro llena el formulario de compra */
+input:focus{
+    background-color: #dbeafe;
+}
+
+/* TABLA */
+.peliculas{
+    flex: 1;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* INPUTS */
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* BOTON */
+button{
+    width: 100%;
+    padding: 12px;
+    background-color: #38bdf8;
+    color: white;
+    border-radius: 5px;
+}
+
+/* HOVER DEL BOTON */
+button:hover{
+    background-color: #1e3a8a;
+}
+
+/* TABLA */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* SECCION IMAGENES */
+.proximamente{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* IMAGENES */
+img{
+    display: inline-block;
+    width: 220px;
+    height: 320px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+/* SECCION VIDEO */
+.video{
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* VIDEO */
+.video iframe{
+    position: relative;
+    border: 5px solid #38bdf8;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 700px;
+    max-width: 100%;
+}
+
+/* FOOTER */
+footer{
+    background-color: #0f172a;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* REDES SOCIALES */
+.redes-sociales{
+
+    position: sticky;
+    top: 50%;
+
+    margin-top: 40px;
+
+    text-align: left;
+}
+
+/* LISTA */
+.redes-sociales ul{
+    list-style: none;
+}
+
+
+/* ITEMS REDES: aqui intente aplicar conceptos para los iconos de las redes sociales */
+.redes-sociales li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/* ITEMS REDES: aqui intente aplicar conceptos para los iconos de las redes sociales */
+.redes-sociales img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* ITEMS REDES: aqui intente aplicar conceptos para los iconos de las redes sociales */
+.redes-sociales li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* ICONOS */
+.redes-sociales img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
