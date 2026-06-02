@@ -18,11 +18,51 @@ header{
     margin-bottom: 30px;
     text-align: center;
 }
+.hero{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-texto{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: white;
+}
+
+.hero-texto h2{
+    font-size: 5rem;
+    margin-bottom: 15px;
+}
+
+.hero-texto p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
 
 /* TITULO */
 header h1{
     margin-bottom: 15px;
+    color: white;
 }
+    
 
 /* NAV */
 nav ul{
@@ -145,36 +185,66 @@ footer{
     margin-top: 30px;
     text-align: center;
 }
+header h1{
+    color: white;
+}
+
+footer p{
+    color: white;
+}
 
 /* REDES SOCIALES */
 .redes-sociales{
-
-    position: sticky;
-    top: 50%;
-
     margin-top: 40px;
+    text-align: center;
+}
+/* Botón flotante WhatsApp */
 
-    text-align: left;
+
+.whatsapp-float{
+
+    position: fixed;
+
+    bottom: 20px;
+
+    right: 20px;
+
+    z-index: 1000;
 }
 
+/* Imagen */
+
+.whatsapp-float img{
+
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+
+    animation: whatsappPulse 1.5s infinite;
+}
+
+/* Animación */
+
+@keyframes whatsappPulse{
+
+    0%{
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.8);
+    }
+
+    50%{
+        transform: scale(1.1);
+        box-shadow: 0 0 20px 10px rgba(37, 211, 102, 0.5);
+    }
+
+    100%{
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
 /* LISTA */
 .redes-sociales ul{
     list-style: none;
-}
-
-
-/* ITEMS REDES: aqui intente aplicar conceptos para los iconos de las redes sociales */
-.redes-sociales li{
-    display: inline-block;
-    margin-right: 10px;
-}
-
-
-/* ITEMS REDES: aqui intente aplicar conceptos para los iconos de las redes sociales */
-.redes-sociales img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
 }
 
 /* ITEMS REDES: aqui intente aplicar conceptos para los iconos de las redes sociales */
@@ -252,6 +322,7 @@ footer{
     padding: 15px;
     border-radius: 15px;
     background-color: white;
+    color: #111827;
     text-align: center;
 
     box-shadow: 0 5px 15px rgba(0,0,0,0.25);
@@ -259,6 +330,9 @@ footer{
     transition: all 0.4s ease;
 }
 
+header h1::before{
+    content: "🎬 ";
+}
 /* Imágenes */
 
 .sala img{
